@@ -35,6 +35,8 @@ android {
 }
 
 dependencies {
+    val lifecycle_version = "2.8.1"
+    val arch_version = "2.2.0"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -44,4 +46,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+    implementation ("androidx.activity:activity-ktx:1.9.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    implementation ("androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
 }
