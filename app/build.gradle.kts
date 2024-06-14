@@ -36,7 +36,7 @@ android {
 
 dependencies {
     val lifecycle_version = "2.8.1"
-    val arch_version = "2.2.0"
+    val recyclereview_version = "1.1.0"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -54,4 +54,5 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation ("androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
+    implementation("androidx.recyclerview:recyclerview:$recyclereview_version")
 }
